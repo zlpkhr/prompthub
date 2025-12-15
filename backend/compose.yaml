@@ -1,0 +1,16 @@
+name: ph
+
+services:
+  pg:
+    container_name: ph-pg
+    image: postgres:17
+    environment:
+      POSTGRES_USER: ph
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
