@@ -1,0 +1,8 @@
+{
+  "name": "prompthub",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
