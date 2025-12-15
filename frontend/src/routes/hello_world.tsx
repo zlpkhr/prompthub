@@ -4,5 +4,10 @@ import trpc from "../trpc";
 export default function HelloWorldRoute() {
   const helloWorld = useQuery(trpc.helloWorld.queryOptions());
 
-  return helloWorld.data;
+  return (
+    <div>
+      <span className="material-symbols-rounded">waving_hand</span>
+      {helloWorld.data}
+    </div>
+  );
 }
