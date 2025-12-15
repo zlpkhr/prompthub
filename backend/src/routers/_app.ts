@@ -5,4 +5,3 @@ export const appRouter = t.router({
     return "Hello, World!";
   }),
 });
-export type AppRouter = typeof appRouter;
