@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import trpc from "./trpc";
+import trpc from "../trpc";
 
-export default function App() {
+export default function HelloWorldRoute() {
   const helloWorld = useQuery(trpc.helloWorld.queryOptions());
 
   return helloWorld.data;
