@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+body {
+  position: relative;
+}
+
+.root {
+  isolation: isolate;
+}
+
 .material-symbols-rounded {
   font-size: 20px;
 }
