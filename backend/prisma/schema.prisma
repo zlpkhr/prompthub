@@ -9,4 +9,6 @@ datasource db {
 
 model Prompt {
   id String @id @default(nanoid())
+
+  @@map("prompts")
 }
